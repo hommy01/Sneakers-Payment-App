@@ -26,7 +26,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(
-                        'images/delicious3.jpg'), // Path to your image
+                        'images/background.jpg'), // Path to your image
                     fit: BoxFit.cover, // Make sure the image covers the screen
                   ),
                 ),
@@ -51,30 +51,9 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                           children: [
                             TextSpan(
-                              text: 'Up ',
+                              text: 'Up to Sneakers Payment App',
                               style: TextStyle(
-                                color: Color.fromARGB(255, 194, 12, 179),
-                                fontSize: 30,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'To ',
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 35, 190, 178),
-                                fontSize: 30,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'Cloth ',
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 226, 12, 12),
-                                fontSize: 30,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'Payment App',
-                              style: TextStyle(
-                                color: Colors.lightBlue,
+                                color: Color.fromARGB(255, 14, 159, 226),
                                 fontSize: 30,
                               ),
                             ),
@@ -219,7 +198,10 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget _buildBackButton(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pop(context);
+        Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+      );
       },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),

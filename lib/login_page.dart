@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
           height: height,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/6.jpg'),
+              image: AssetImage('images/background.jpg'),
               fit: BoxFit.cover,
             ),
           ),
@@ -115,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
     return RichText(
       textAlign: TextAlign.center,
       text: const TextSpan(
-        text: 'Cloth Payment App ',
+        text: 'Sneakers Payment App ',
         style: TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.w700,
